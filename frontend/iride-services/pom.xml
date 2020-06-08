@@ -26,6 +26,7 @@
         <groupId>it.geosolutions.csi.sira</groupId>
         <artifactId>sira-root</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>iride-services</artifactId>
@@ -76,11 +77,9 @@
 
     <properties>
         <!-- Java Version -->
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
 
         <!-- Dependencies -->
-        <spring.version>3.1.4.RELEASE</spring.version>
-        <spring-security.version>3.1.0.RELEASE</spring-security.version>
 
         <!-- Build -->
         <maven.build.timestamp.format>dd-MMM-yyyy HH:mm</maven.build.timestamp.format>
@@ -92,7 +91,7 @@
     </properties>
 
     <repositories>
-        <!-- https://maven-repository.com/artifact/org.springframework/spring-test-mvc/1.0.0.M2 -->
+        <!--https://maven-repository.com/artifact/org.springframework/spring-test-mvc/1.0.0.M2 -->
         <repository>
             <id>spring-milestones</id>
             <url>https://repo.spring.io/libs-milestone/</url>
@@ -166,7 +165,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>4.12</version>
             <exclusions>
                 <exclusion>
                     <artifactId>hamcrest-core</artifactId>
@@ -209,11 +208,6 @@
             <artifactId>spring-test-mvc</artifactId>
             <version>1.0.0.M2</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-expression</artifactId>
-            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.security</groupId>
